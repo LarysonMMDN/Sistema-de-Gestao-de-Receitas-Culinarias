@@ -1,4 +1,4 @@
-package com.recipebook.recipebook.backend.config;
+package com.recipebook.recipebook.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

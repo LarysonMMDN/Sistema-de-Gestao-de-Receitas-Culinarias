@@ -1,6 +1,6 @@
-package com.recipebook.recipebook.backend.repository;
+package com.recipebook.recipebook.repository;
 
-import com.recipebook.recipebook.backend.entity.Recipe;
+import com.recipebook.recipebook.entity.Recipe;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

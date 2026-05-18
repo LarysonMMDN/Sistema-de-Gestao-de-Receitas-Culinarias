@@ -1,4 +1,4 @@
-package com.recipebook.recipebook.backend.entity;
+package com.recipebook.recipebook.entity;
 
 import jakarta.persistence.CollectionTable;
 import jakarta.persistence.Column;

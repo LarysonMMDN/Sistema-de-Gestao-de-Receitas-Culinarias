@@ -1,4 +1,4 @@
-package com.recipebook.recipebook.backend.exception;
+package com.recipebook.recipebook.exception;
 
 public class BusinessException extends RuntimeException {
 

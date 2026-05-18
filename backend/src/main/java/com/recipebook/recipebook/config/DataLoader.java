@@ -1,8 +1,8 @@
-package com.recipebook.recipebook.backend.config;
+package com.recipebook.recipebook.config;
 
-import com.recipebook.recipebook.backend.entity.Categoria;
-import com.recipebook.recipebook.backend.entity.Recipe;
-import com.recipebook.recipebook.backend.repository.RecipeRepository;
+import com.recipebook.recipebook.entity.Categoria;
+import com.recipebook.recipebook.entity.Recipe;
+import com.recipebook.recipebook.repository.RecipeRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 

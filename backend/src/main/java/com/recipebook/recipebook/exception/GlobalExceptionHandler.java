@@ -1,4 +1,4 @@
-package com.recipebook.recipebook.backend.exception;
+package com.recipebook.recipebook.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -13,9 +13,6 @@ import java.util.Map;
 @RestControllerAdvice
 public class GlobalExceptionHandler {
 
-    // =========================================
-    // RESOURCE NOT FOUND
-    // =========================================
     @ExceptionHandler(ResourceNotFoundException.class)
     public ResponseEntity<Map<String, Object>> handleResourceNotFound(
             ResourceNotFoundException ex
@@ -32,9 +29,7 @@ public class GlobalExceptionHandler {
                 .body(response);
     }
 
-    // =========================================
-    // BUSINESS EXCEPTION
-    // =========================================
+
     @ExceptionHandler(BusinessException.class)
     public ResponseEntity<Map<String, Object>> handleBusinessException(
             BusinessException ex
@@ -51,9 +46,7 @@ public class GlobalExceptionHandler {
                 .body(response);
     }
 
-    // =========================================
-    // VALIDATION EXCEPTION
-    // =========================================
+
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public ResponseEntity<Map<String, Object>> handleValidationException(
             MethodArgumentNotValidException ex
@@ -78,9 +71,7 @@ public class GlobalExceptionHandler {
                 .body(response);
     }
 
-    // =========================================
-    // GENERIC EXCEPTION
-    // =========================================
+
     @ExceptionHandler(Exception.class)
     public ResponseEntity<Map<String, Object>> handleGenericException(
             Exception ex

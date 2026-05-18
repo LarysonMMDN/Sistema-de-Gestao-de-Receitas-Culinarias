@@ -1,7 +1,7 @@
-package com.recipebook.recipebook.backend.controller;
+package com.recipebook.recipebook.controller;
 
-import com.recipebook.recipebook.backend.entity.Recipe;
-import com.recipebook.recipebook.backend.service.RecipeService;
+import com.recipebook.recipebook.entity.Recipe;
+import com.recipebook.recipebook.service.RecipeService;
 import jakarta.validation.Valid;
 
 import org.springframework.http.HttpStatus;
