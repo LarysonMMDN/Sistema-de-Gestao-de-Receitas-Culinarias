@@ -1,0 +1,24 @@
+<h2>➕ Nova Receita</h2>
+
+<form [formGroup]="form" (ngSubmit)="submit()">
+
+  <input formControlName="nome" placeholder="Nome">
+
+  <select formControlName="categoria">
+    <option>DOCE</option>
+    <option>SALGADO</option>
+    <option>BEBIDA</option>
+    <option>SOBREMESA</option>
+  </select>
+
+  <input type="number" formControlName="tempoPreparo" placeholder="Tempo">
+
+  <input type="number" formControlName="porcoes" placeholder="Porções">
+
+  <input formControlName="ingredientes" placeholder="Ingredientes (separados por vírgula)">
+
+  <textarea formControlName="modoPreparo" placeholder="Modo de preparo"></textarea>
+
+  <button type="submit">Salvar</button>
+
+</form>

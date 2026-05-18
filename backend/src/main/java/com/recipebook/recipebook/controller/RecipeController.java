@@ -25,6 +25,11 @@ public class RecipeController {
         return service.listar();
     }
 
+    @GetMapping("/teste")
+    public String teste() {
+        return "API funcionando";
+    }
+
     @GetMapping("/{id}")
     public Recipe buscarPorId(@PathVariable Long id) {
         return service.buscarPorId(id);
